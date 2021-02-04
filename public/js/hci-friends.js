@@ -1,5 +1,7 @@
 'use strict';
 
+const e = require("express");
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -10,6 +12,10 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+}
+
+function friendClick() {
+	e.preventDefault();
 }
 
 function anagrammedName(name) {
